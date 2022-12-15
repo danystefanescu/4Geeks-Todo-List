@@ -34,7 +34,7 @@ const Todolist = () => {
         <div className="list">
           <ul className="list-group">
             {list.map((listElement, index) => {
-              return <li key={index} className="list-group-item d-flex justify-content-between hidden-icon">
+              return <li key={index} className="list-group-item d-flex justify-content-between">
                   {listElement}
                   <span>
                     <a key={index} onClick={(event) => {deleteTask(index)}}>
